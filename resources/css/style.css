@@ -48,6 +48,10 @@ div {
   margin-right: 1rem;
 }
 
+#menu1 {
+  display: none;
+}
+
 ul {
   display: inline-flex;
 }
@@ -64,7 +68,6 @@ li {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
-  width: 24rem;
 }
 
 /* Upper Body content */
@@ -126,6 +129,7 @@ li {
 .titlebox #cadetblue {
   background-color: cadetblue;
   color: white;
+  font-weight: bold;
   width: 10rem;
   padding: 0.5rem 0 0.5rem 1.25rem;
   margin-bottom: 1rem;
@@ -158,4 +162,141 @@ li {
 .footer img {
   height: 1.5rem;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+/* Extended Display Settings */
+
+@media only screen and (max-width: 1024px) {
+
+  .header .container {
+    margin-top: 0rem;
+  }
+
+  .header {
+    height: 17rem;
+    width: 100%;
+    background-position: 40%;
+    background-size: cover;
+  }
+
+  .mottobox {
+    margin-top: 5rem;
+    margin-left: 18rem;
+    padding: 0.75rem 4rem 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .container {
+    width: 470px;
+  }
+
+  .header .container {
+    width: 100%;
+  }
+
+  .header .container p {
+    display: none;
+  }
+
+  #menu1 {
+    display: inline;
+  }
+
+  #menu3 {
+    display: none;
+  }
+
+  .header {
+    height: 17rem;
+    width: 100%;
+    background-position: 20%;
+    background-size: cover;
+  }
+
+  .mottobox {
+    display: flex;
+    margin-top: 9rem;
+    margin-left: 0rem;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .mottobox p {
+    font-size: 1rem;
+    padding: 1rem 0 1rem 0;
+  }
+
+  .ubody p {
+    font-size: 0.77rem;
+  }
+
+
+  .ubody .container {
+    margin-top: 3.77rem;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+  }
+
+  .leftbox, .centerbox, .rightbox {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 5rem;
+  }
+
+  .leftbox img {
+    margin-bottom: 1rem;
+  }
+
+  .centerbox img {
+    margin: 1.54rem 0 1rem 0;
+  }
+
+  .rightbox img {
+    margin: 1.54rem 0 1rem 0;
+  }
+
+  .lbody {
+    margin-top: 3.77rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .lbody .container {
+    flex-direction: column;
+  }
+
+  .textbox {
+    width: 22rem;
+  }
+
+  .titlebox {
+    width: 22rem;
+    margin-bottom: 4rem;
+  }
+
+  .titlebox p {
+    font-size: 0.77rem;
+  }
+
+  .footer {
+    align-items: center;
+
+  }
+
+  .footer p {
+    display: none;
+  }
+
+  .footer img {
+    padding: 4rem 0rem 4rem 0rem;
+    margin: 0 auto;
+  }
+
 }
